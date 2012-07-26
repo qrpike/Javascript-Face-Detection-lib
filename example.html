@@ -2,24 +2,29 @@
 	
 	<title>JS Face Detection Exmaple:</title>
 	
+	<script type="text/javascript" src="face.js"></script>
+	<script type="text/javascript" src="ccv.js"></script> 
+	<script type="text/javascript" src="face.api.js"></script>
+	
 </head><body> 
 
-	<h1>Detecting Faces...</h1>
-	
-	<script type="text/javascript" src="https://raw.github.com/qrpike/Javascript-Face-Detection-lib/master/face.js"></script>
-	<script type="text/javascript" src="https://raw.github.com/qrpike/Javascript-Face-Detection-lib/master/ccv.js"></script> 
-	<script type="text/javascript" src="https://raw.github.com/qrpike/Javascript-Face-Detection-lib/master/face.api.js"></script>
+	<h1>Detecting Faces...</h1> 
 	
 	<canvas id="output"></canvas> 
 	
 	<script type="text/javascript">
-	var detector = new faceDetect({ imageUrl:'https://github.com/qrpike/Javascript-Face-Detection-lib/raw/master/example.jpg' , canvasID:'output' });
-	detector.detectFace(function(){
-	    console.log('Done detecting image');
-	    // detector.timeElapsed : Time it took to detect faces..
-	    // detector.numFaces : Number of faces found..
-	    // detector.pos : Position of the faces..
-	});
+	(function(){
+	
+		var detector = new faceDetect({ imageUrl:'example.jpg' , canvasID:'output' });
+		detector.detectFace(function(){
+		    console.log('Done detecting image');
+		    console.log('Time Elapsed: '+detector.timeElapsed);
+		    console.log('Faces: '+detector.numFaces);
+		    console.log('Positions: ');
+		    	console.log(detector.pos); 
+		});
+	
+	})();
 	</script>
 
 	
