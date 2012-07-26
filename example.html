@@ -1,0 +1,26 @@
+<html><head>
+	
+	<title>JS Face Detection Exmaple:</title>
+	
+</head><body> 
+
+	<h1>Detecting Faces...</h1>
+	
+	<script type="text/javascript" src="https://raw.github.com/qrpike/Javascript-Face-Detection-lib/master/face.js"></script>
+	<script type="text/javascript" src="https://raw.github.com/qrpike/Javascript-Face-Detection-lib/master/ccv.js"></script> 
+	<script type="text/javascript" src="https://raw.github.com/qrpike/Javascript-Face-Detection-lib/master/face.api.js"></script>
+	
+	<canvas id="output"></canvas> 
+	
+	<script type="text/javascript">
+	var detector = new faceDetect({ imageUrl:'https://github.com/qrpike/Javascript-Face-Detection-lib/raw/master/example.jpg' , canvasID:'output' });
+	detector.detectFace(function(){
+	    console.log('Done detecting image');
+	    // detector.timeElapsed : Time it took to detect faces..
+	    // detector.numFaces : Number of faces found..
+	    // detector.pos : Position of the faces..
+	});
+	</script>
+
+	
+</body></html>
