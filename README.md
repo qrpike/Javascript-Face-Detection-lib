@@ -3,13 +3,13 @@ Javascript-Face-Detection-lib
 
 A Javascript API for detecting multiple faces using HTML5 Canvas and Async Javascript
 
-Use of Object:
-  
-	Must include before this file: (These were not written by me)
-	ccv.js
-	face.js
+Use of Object: 
 	
 	-- HTML --
+	
+	<script type="text/javascript" src="face.js"></script>
+	<script type="text/javascript" src="ccv.js"></script> 
+	<script type="text/javascript" src="face.api.js"></script>
 	
 	<canvas id="output"></canvas>
 	
