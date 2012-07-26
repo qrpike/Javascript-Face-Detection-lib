@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>JS Face Detection  by qrpike</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>JS Face Detection </h1>
+        <p>A Javascript API for detecting multiple faces using HTML5 Canvas and Async Javascript</p>
+
+        <p class="view"><a href="https://github.com/qrpike/Javascript-Face-Detection-lib">View the Project on GitHub <small>qrpike/Javascript-Face-Detection-lib</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/qrpike/Javascript-Face-Detection-lib/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/qrpike/Javascript-Face-Detection-lib/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/qrpike/Javascript-Face-Detection-lib">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>Javascript Face Detection Object</h3>
+
+<p>Easy way for you to detect faces in images using HTML5 and Async, Object oriented Javascript.</p>
+
+<h2>Use:</h2>
+
+<pre><code>&lt;script type="text/javascript" src="face.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="ccv.js"&gt;&lt;/script&gt; 
+&lt;script type="text/javascript" src="face.api.js"&gt;&lt;/script&gt;
+
+&lt;canvas id="output"&gt;&lt;/canvas&gt; 
+
+&lt;script type="text/javascript"&gt;
+var detector = new faceDetect({ imageUrl:'/path/to/local/image' , canvasID:'output' });
+detector.detectFace(function(){
+    console.log('Done detecting image');
+    // detector.timeElapsed : Time it took to detect faces..
+    // detector.numFaces : Number of faces found..
+    // detector.pos : Position of the faces..
+});
+&lt;/script&gt;
+</code></pre>
+
+<p>If you need any more information just contact me, extend it however you see fit.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/qrpike">qrpike</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
