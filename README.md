@@ -3,7 +3,7 @@ Javascript Face Detection lib
 
 GO HERE -> <a href="http://qrpike.github.com/Javascript-Face-Detection-lib">GitHub Page</a>
 
-More info on Me -> <a href="http://quintonpike.com/">Quinton Pike</a>
+More info on Me -> <a href="http://qpike.com/">Quinton Pike</a>
 
 A Javascript API for detecting multiple faces using HTML5 Canvas and Async Javascript
 
